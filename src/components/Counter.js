@@ -4,7 +4,7 @@ function Counter() {
   const [count, setCount] = useState(0);
 
   function handleInput(event) {
-    setCount(Math.floor(event.target.value));
+    setCount(Number(event.target.value));
   }
 
   return (
